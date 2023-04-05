@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/48e59b9f0f.js" crossorigin="anonymous"></script>
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+
+    <title>Formulário Básico</title>
+    <link rel="icon" href="./assets/imagens/ui-radios.svg">
+    
+</head>
+<body>
+    <div id="container" >
+        <img src="./assets/imagens/perfil.png" alt="perfil" >
+        <form>
+            <h3>Entre em contato:</h3>
+            <div class="form-group-sm div-user">
+                <input onBlur="campo(0)" id="id-email" class="form-control-sm" type="text" name="email"  autocomplete="off">
+                <label for="id-email">E-mail</label>
+            </div>
+            <div class="form-group-sm div-pass">
+                <input onBlur="campo(1)" id="id-senha"  class="form-control-sm" type="password" name="senha" autocomplete="off">
+                <label for="id-senha">Senha</label>
+            </div>
+            <input class="btn" type="submit" value="Logar">
+        </form>
+        <div id="social-media">
+            <a href="#"><img src="./assets/imagens/facebook.svg" alt="Facebook" class="img-fluid"></a>
+            <a href="#"><img src="./assets/imagens/instagram.svg" alt="Instagram" class="img-fluid"></a>
+            <a href="#"><img src="./assets/imagens/google.svg" alt="Gmail" class="img-fluid"></a>
+            <a href="#"><img src="./assets/imagens/github.svg" alt="Github" class="img-fluid"></a>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

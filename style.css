@@ -1,0 +1,110 @@
+:root{
+    --color-yellow: rgb(247, 147, 0);
+    --color-yellow-2:rgb(246, 138, 0);
+    --color-white:rgb(255, 255, 255);
+    --color-white-2: rgba(255, 255, 255, 0.6);
+    --color-grey: rgba(255, 255, 255, 0.3);
+    --color-purple: rgb(100, 61, 135);
+    --color-purple-2: rgba(100, 61, 135, 0.6);
+}
+
+body{
+    font-family: 'Dosis';
+    background: var(--color-purple) url(./assets/imagens/fundo.jpg) no-repeat top center fixed;
+    background-size: cover;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+#container{
+    width: 450px;
+    height: auto;
+    background-color: var(--color-grey);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#container img{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input{
+    height: 40px;
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+input[type="text"],
+input[type="password"]{
+    border-bottom: 1px solid var(--color-purple-2);
+    outline: 0;
+}
+
+input[type="text"]{
+    background: url(./assets/imagens/icone-usuario.png) no-repeat right center;
+   
+    
+}
+input[type="password"]{
+    background: url(./assets/imagens/icone-cadeado.png) no-repeat right center;
+    
+    
+}
+
+input[type="submit"]{
+    color: var(--color-yellow);
+    border: 1px solid var(--color-yellow);
+    cursor: pointer;
+    padding: 5px 20px;
+    height: 40px;
+    width: 60%;
+    background: -webkit-linear-gradient(to bottom, var(--color-yellow) var(--color-yellow-2));
+    background: -moz-linear-gradient(to bottom, var(--color-yellow) var(--color-yellow-2));
+    background: -o-linear-gradient(to bottom, var(--color-yellow) var(--color-yellow-2));
+    background: linear-gradient(to bottom, var(--color-yellow) var(--color-yellow-2));
+    transition: .4s ease;
+
+}
+
+input[type="submit"]:hover{
+    color: var(--color-white);
+    background: var(--color-yellow-2);
+}
+
+label{
+    position: absolute;
+    font-size: 1rem;
+    top: 25px;
+    left: 47px;
+    transition: .4s;
+}
+
+.div-user, .div-pass{
+    position: relative;
+}
+
+input:focus + label{
+    font-size: 12px !important;
+    top:-3px !important;
+    transition: .4s;
+}
+
+#social-media img{
+    width: 25px;
+    margin: 5px;
+}
